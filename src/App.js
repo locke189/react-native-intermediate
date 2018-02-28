@@ -11,6 +11,10 @@ import {
   StyleSheet
 } from 'react-native';
 
+import {
+  Header
+} from './components'
+
 export default class App extends Component {
   render() {
     const {
@@ -18,6 +22,7 @@ export default class App extends Component {
     } = styles;
     return (
       <View style={appStyle}>
+        <Header />
         <Text> App Container! </Text>
       </View>
     );
