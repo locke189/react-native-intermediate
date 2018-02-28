@@ -12,7 +12,8 @@ import {
 } from 'react-native';
 
 import {
-  Header
+  Header,
+  SearchPage
 } from './components'
 
 export default class App extends Component {
@@ -23,7 +24,7 @@ export default class App extends Component {
     return (
       <View style={appStyle}>
         <Header />
-        <Text> App Container! </Text>
+        <SearchPage />
       </View>
     );
   }

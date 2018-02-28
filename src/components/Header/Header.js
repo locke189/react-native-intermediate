@@ -23,11 +23,12 @@ export default class Header extends Component {
 const styles = StyleSheet.create({
   headerStyles: {
     backgroundColor: '#DDD',
-    position: 'absolute',
+    position: 'relative',
     top: 0,
     width: '100%',
     marginTop: 20,
     padding: 15,
+    flex: 0,
   },
   textStyles:{
     fontFamily: 'Marvel-Bold',
