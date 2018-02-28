@@ -4,6 +4,8 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
+
+
 export default class Header extends Component {
   render(){
     const {

@@ -5,6 +5,10 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import {
+  Card
+} from '../../components';
+
 export default class SearchPage extends Component {
   render(){
     const {
@@ -13,6 +17,7 @@ export default class SearchPage extends Component {
     } = styles;
     return (
       <View style={searchPageStyles}>
+        <Card />
         <Text style={textStyles}>SearchPage Component</Text>
       </View>
     );
@@ -24,6 +29,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
     flex: 1,
     width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 30,
   },
   textStyles: {
     fontFamily: 'Marvel-Regular',
