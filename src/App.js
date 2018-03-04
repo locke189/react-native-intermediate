@@ -16,6 +16,10 @@ import {
   SearchPage
 } from './components'
 
+import {
+  AppSearchPage
+} from './containers';
+
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { rootReducer } from './reducers';
@@ -35,7 +39,7 @@ export default class App extends Component {
       <Provider store={store}>
         <View style={appStyle}>
           <Header />
-          <SearchPage />
+          <AppSearchPage />
         </View>
       </Provider>
     );

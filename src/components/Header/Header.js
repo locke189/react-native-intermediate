@@ -24,7 +24,7 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
   headerStyles: {
-    backgroundColor: '#DDD',
+    backgroundColor: '#000',
     position: 'relative',
     top: 0,
     width: '100%',
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flex: 0,
-    shadowColor: '#AAA',
+    shadowColor: '#000',
     shadowOffset: {width: 0, height: 3 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
   textStyles:{
     fontFamily: 'Marvel-Bold',
     fontSize: 24,
-    color: '#000',
+    color: '#DDD',
   }
 })

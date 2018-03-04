@@ -1,6 +1,6 @@
 import { getAllCharacters } from '../services/HttpRequests';
 
-export const CREATE_HERO_LIST = 'CREATE_HERO_LIST'
+export const CREATE_HERO_LIST = 'CREATE_HERO_LIST';
 
 function createHeroList(heroList) {
   return {
@@ -15,8 +15,10 @@ function requestError() {
   }
 }
 
-function requestHeroList(){
+export function requestHeroList(){
   return (dispatch) => {
-    getAllCharacters((data) => dispatch(createHeroList(data)), (response) => console.log(response))
+    getAllCharacters((data) => {
+      dispatch(createHeroList(data));
+    }, (response) => console.log(response));
   }
 }
