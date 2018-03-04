@@ -5,7 +5,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-export default class Card extends Component {
+export default class CardItem extends Component {
   render(){
     const {
       cardStyles,
@@ -21,21 +21,15 @@ export default class Card extends Component {
 
 const styles = StyleSheet.create({
   cardStyles: {
-    backgroundColor: '#ddd',
-    margin: 10,
     width: '100%',
-    borderWidth: 1,
     borderRadius: 2,
-    borderColor: '#ddd',
-    borderBottomWidth: 0,
-    shadowColor: '#ddd',
+    borderColor: '#AAA',
+    borderBottomWidth: 1,
+    shadowColor: '#AAA',
     shadowOffset: {width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 1,
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10,
   },
   textStyles:{
     color: '#000',

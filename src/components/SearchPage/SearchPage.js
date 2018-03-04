@@ -6,7 +6,8 @@ import {
 } from 'react-native';
 
 import {
-  Card
+  Card,
+  CardItem
 } from '../../components';
 
 export default class SearchPage extends Component {
@@ -17,7 +18,14 @@ export default class SearchPage extends Component {
     } = styles;
     return (
       <View style={searchPageStyles}>
-        <Card />
+        <Card>
+          <CardItem>
+            <Text style={textStyles}>Card Component</Text>
+          </CardItem>
+          <CardItem>
+            <Text style={textStyles}>Card Component 2</Text>
+          </CardItem>
+        </Card>
         <Text style={textStyles}>SearchPage Component</Text>
       </View>
     );
@@ -26,7 +34,7 @@ export default class SearchPage extends Component {
 
 const styles = StyleSheet.create({
   searchPageStyles: {
-    backgroundColor: '#000',
+
     flex: 1,
     width: '100%',
     justifyContent: 'center',
