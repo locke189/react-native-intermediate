@@ -16,16 +16,28 @@ import {
   SearchPage
 } from './components'
 
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { rootReducer } from './reducers';
+import thunk from 'redux-thunk';
+
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunk)
+);
+
 export default class App extends Component {
   render() {
     const {
       appStyle
     } = styles;
     return (
-      <View style={appStyle}>
-        <Header />
-        <SearchPage />
-      </View>
+      <Provider store={store}>
+        <View style={appStyle}>
+          <Header />
+          <SearchPage />
+        </View>
+      </Provider>
     );
   }
 }
